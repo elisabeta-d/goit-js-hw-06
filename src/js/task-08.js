@@ -3,7 +3,7 @@ const loginForm = document.querySelector(".login-form");
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const inpus = document.querySelector(".login-form").elements;
+  const inputs = document.querySelector(".login-form").elements;
   const emailInput = inputs[0];
   const passwordInput = inputs[1];
 
@@ -14,6 +14,8 @@ loginForm.addEventListener("submit", (e) => {
       email: emailInput.value,
       password: passwordInput.value,
     };
+    
+    alert("The form has been submitted succsesfully!");
     loginForm.reset();
   }
 });
